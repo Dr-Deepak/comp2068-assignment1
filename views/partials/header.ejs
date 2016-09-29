@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- CSS-->
+    <link type = "text/css" rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
+    <link type = "text/css" rel='stylesheet' href='/stylesheets/bootstrap-theme.min.css'/>
+  </head>
+  <body>
+    <nav class ="navbar navbar-default">
+      <ul class = "nav navbar-nav">
+        <%for(var i=0;i<pages.length; i++) {%>
+        <li><a href =<%= pages[i]%>><%= pages[i]%></a></li>
+        <% } %>
+
+      </ul>
+    </nav>

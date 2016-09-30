@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var pages = ["Home","About","Contact","Projects","Services"];
 /* GET home page. */
-router.get('/home', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('home', { title: 'Home Page',
                      messege: 'This is my HomePage',
                    pages: pages });

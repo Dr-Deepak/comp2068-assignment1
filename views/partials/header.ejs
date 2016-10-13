@@ -5,14 +5,19 @@
     <!-- CSS-->
     <link type = "text/css" rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
     <link type = "text/css" rel='stylesheet' href='/stylesheets/bootstrap-theme.min.css'/>
+    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
-  <body>
+  <body class ="container container-fluid">
+    <header class="container container-fluid">
     <!-- navigation bar with dynamic links -->
     <nav class ="navbar navbar-default">
-      <ul class = "nav navbar-nav">
-        <% for(var i=0;i<pages.length;i++) {%>
+      <ul class="nav navbar-nav">
+          <% for(var i=0;i<pages.length;i++) {%>
           <% var link='/'; if(i>0){ link = pages[i];}  %>
         <li><a href =<%= link%>><%= pages[i]%></a></li>
         <% } %>
       </ul>
     </nav>
+
+  </header>

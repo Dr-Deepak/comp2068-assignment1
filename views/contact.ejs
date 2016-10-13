@@ -1,7 +1,23 @@
 <%-include partials/header.ejs %>
     <h1><%= title %></h1>
-    <div>Phone    : <%= phone %></div>
-    <div>Email    : <%= email %></div>
-    <div>GIT      : <%= git %></div>
-    <div>Linkedin : <%= linkedin %></div>
+    <form method="post"> <!--IN node page posts tio itself-->
+      <div class="form-group">
+        <label for= "FullName" class "col-sm-2 control-label">Full Name:</label>
+        <input name="FullName" id="FullName" required/>
+      </div>
+      <div class="form-group">
+        <label for= "subject" class "col-sm-2 control-label">Purpose:</label>
+        <input name="subject" id="subject" required/>
+      </div>
+        <div class="form-group">
+          <label for= "message" class "col-sm-2 control-label">Message:</label>
+          <input name="message" id="wins" required type="message" min="0"/>
+        </div>
+        <div class="form-group">
+            <label for= "losses" class "col-sm-2 control-label">Losses:</label>
+            <input name="losses" id="losses" required type="number" min="0"/>
+        </div>
+          <button class="btn btn-success col-sm-offset-2">Save</button>
+        </form>
+    
 <%-include partials/footer.ejs %>

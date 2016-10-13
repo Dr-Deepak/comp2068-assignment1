@@ -3,26 +3,27 @@ var router = express.Router();
 var pages = ["Home","About","Contact","Projects","Services"];
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Home Page',
-                     messege: 'This is my HomePage',
+  res.render('home', { title: 'Deepak Sharma',
+                     messege: 'Full Stack Developer Systems Analyst',
+                     phone : '647-606-4530',
+                     email : 'deepak.sharmacpa@gmail.com',
+                     git: 'www.github.com/Dr-Deepak/',
+                     linkedin : 'www.linkedin.com/in/deepak-sharma-a71080121',
                    pages: pages });
 });
 
 /* GET about me page. */
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About me',
-                      messege:'This is me',
+  res.render('about', { title: 'About',
+                      messege:'Deepak currently enrolled in second year of computer programmer analyst program. Have   ',
                         pages: pages});
 });
 
 /* GET contact me page. */
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Me',
-phone : '647-606-4530',
-email : 'deepak.sharmacpa@gmail.com',
-git: 'www.github.com/Dr-Deepak/',
-linkedin : 'www.linkedin.com/in/deepak-sharma-a71080121',
-  pages: pages });
+
+pages: pages });
 });
 
 /* GET projects page. */

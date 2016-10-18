@@ -5,10 +5,8 @@ var pages = ["Home","About","Contact","Projects","Services"];
 router.get('/', function(req, res, next) {
   res.render('home', { title: 'Deepak Sharma',
                      messege: 'Full Stack Developer Systems Analyst',
-                     phone : '647-606-4530',
-                     email : 'deepak.sharmacpa@gmail.com',
-                     git: 'www.github.com/Dr-Deepak/',
-                     linkedin : 'www.linkedin.com/in/deepak-sharma-a71080121',
+                     git: 'https://github.com/Dr-Deepak',
+                     linkedin : 'https://www.linkedin.com/in/deepak-sharma-a71080121',
                    pages: pages });
 });
 

@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <!-- CSS-->
-    <!--
-    <link type = "text/css" rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
-    <link type = "text/css" rel='stylesheet' href='/stylesheets/bootstrap-theme.min.css'/>
-    -->
+    <title>Home | <%= title %></title>
+    <!-- CSS-->    
     <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title"/>
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
   </head>
   <body>
     <header>
-      <div class="container">
         <div class="header__logo">
           <p><%= title %></p>
         </div>
@@ -25,7 +20,5 @@
             <li  class="nav__links"><a href =<%= link%>><%= pages[i]%></a></li>
             <% } %>
           </ul>
-        </nav>
-        <!-- Navigation ends -->
-    </div>
+        </nav><!-- Navigation ends -->
   </header>

@@ -1,49 +1,43 @@
 body {
   padding: 0;
   font-size: sans-serif;
-  background-color: #E3E3E3;
+  background-color: hsla(0, 0%, 0%, 0.60);
+}
+header {
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  /*height:15px;*/
+  color: white;
+  display: flex;
+  position: fixed;
+  background-color:hsla(130, 85%, 41%, 0.28);
+  top: 0px;
+  left: -0.0px;
+}
+main {
+  background-color:hsla(0, 0%, 0%, 0.30);
+  max-width: 960px;
+  margin: 0 auto;
+  height:auto;
+  padding-bottom: 50px
+}
+
+.footer {
+  width: 100%;
+  height:25px;
+  background-color:hsla(130, 85%, 41%, 0.28);
+  color: white;
+  position:fixed;
+  padding: 10px;
+  bottom: 0px;
+  left:0px;
 }
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: :5px;
-}
-header {
-  width: 100%;
-  height:15px;
-  position: fixed;
-  top: 0px;
-  left: -0.0px;
-}
-
-header .container {
-  display:flex;
-  justify-content: space-between;
-  background-color:hsla(0, 0%, 74%, 0.83);  }
-main {
-  background-color: #bcbcbc;
-  max-width: 960px;
-  margin: 0 auto;
-  height:auto;
-/*  background-color: #E3E3E3;
-}
-main .container
-{
-  background-image:url("https://www.b2ttraining.com/wp-content/uploads/2016/02/Business-Analyst-Skills-1.jpg");*/
-}
-.footer {
-  width: 100%;
-  margin: 0 auto;
-  background-color:hsla(0, 0%, 74%, 0.33);
-  position:fixed;
-  padding: 20px;
-  bottom: 0px;
-}
-
-
-
-
-/*
+}/*
 * GRID CLASSES
 */
 
@@ -90,19 +84,26 @@ main .container
   font-weight: bolder;
   margin: 0 5px;
 }
-
+.nav__list{
+    margin: 0 auto;
+    padding-right: 20px;
+    float: right;
+    display:inline-flex;
+}
 .nav__links {
 
-  display: inline;
+  list-style: none;
   padding: 0 5px;
   text-transform: lowercase;
   font-weight: bold;
 }
+.nav {
 
+}
 .nav__links a {
   text-decoration: none;
   font-size-adjust: auto;
-  color: white;
+  color:inherit;
 }
 
 .nav .nav__list:hover a {
@@ -118,7 +119,7 @@ main .container
 
 }
 .background {
-  margin-top: 50px;
+  margin-top: 45px;
   z-index: = -100;
   /*background-color:#c1c0e5;*/
   max-width: 100%;

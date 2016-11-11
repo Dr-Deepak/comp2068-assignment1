@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var pages = ["Home","About","Contact","Projects","Services"];
+//var skill= ["Systems Analyst","FullStack Developer","Business Analyst", "Mainframe Developer"];
 var Git = 'https://github.com/Dr-Deepak';
 var Linkd = 'https://www.linkedin.com/in/deepak-sharma-a71080121';
 
@@ -8,7 +9,8 @@ var Linkd = 'https://www.linkedin.com/in/deepak-sharma-a71080121';
 router.get('/',
     function(req, res, next) {
         res.render('home', { title:'Deepak Sharma',
-                           messege:'Full Stack Developer Systems Analyst',
+                          // skills: skill,
+                           messege:"  ",
                                git:Git,
                           linkedin:Linkd,
                              pages:pages

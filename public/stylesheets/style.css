@@ -1,4 +1,3 @@
-
 body {
   padding: 0;
   font-size: sans-serif;
@@ -12,7 +11,7 @@ header {
   color: white;
   display: flex;
   position: fixed;
-  background-color:hsla(130, 85%, 41%, 0.28);
+  background-color:hsla(110, 90%, 44%, 0.79);
   top: 0px;
   left: -0.0px;
 }
@@ -23,10 +22,9 @@ main {
   height:auto;
   padding-bottom: 50px
 }
-
 footer {
   width: 100%;
-  background-color:hsla(130, 85%, 41%, 0.28);
+  background-color:hsla(110, 90%, 44%, 0.79);
   color: white;
   position:fixed;
   display:flex;
@@ -40,11 +38,9 @@ footer {
   margin: 0 auto;
   padding: :5px;
 }
-
 /*
 * GRID CLASSES
 */
-
 .fourth {
 /*             Use this class whin you have to divide a div section in 4 equal sections of page width*/
   width: 25%;
@@ -80,13 +76,12 @@ footer {
   display: flex;
   z-index: 100;
 }
-
 .fa{
   color:#FFF6A1;
 }
 .social_links{
   list-style: none;
-  padding: 10px;
+  padding: 0px 10px 5px 5px;
   font-size: 30px;
 }
 .fa:hover{
@@ -98,14 +93,14 @@ footer {
 .header__logo p{
   display: flex;
   padding: 0 50px ;
-  font-family: 'Lobster', cursive;
+  font-family: sans-serif;
   font-size: 30px;
   margin: 0 5px;
 }
 .nav__list{
     margin: 0 auto;
     font-size: 20px;
-    padding-right: 20px;
+    padding: 6px 0 0 20px;
     float: right;
     display:inline-flex;
 }
@@ -113,17 +108,14 @@ footer {
   list-style: none;
   padding: 0 5px;
   text-transform: lowercase;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
-.nav {
-
-}
+.nav {   }
 .nav__links a {
   text-decoration: none;
   font-size-adjust: auto;
-  color:inherit;
+  color: inherit;
 }
-
 .nav .nav__list:hover a {
   /*text-decoration-color: orange;*/
   transition:0.5s;
@@ -134,14 +126,12 @@ footer {
   text-transform: capitalize;
   color:#00d8ff;
   transition:0.1s;
-
 }
 .background {
   margin-top: 57px;
   z-index: = -100;
   /*background-color:#c1c0e5;*/
   max-width: 100%;
-
   }
 .background img {
   width: 80%;

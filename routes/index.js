@@ -18,7 +18,6 @@ router.get('/',
         );
     }
 );
-
 /* GET about me page. */
 router.get('/about',
     function(req, res, next) {
@@ -33,14 +32,13 @@ router.get('/about',
         );
     }
 );
-
 /* GET contact me page */
 router.get('/contact',
   function(req, res, next)
   {
     res.render('contact',
                           {
-                                 title: 'Contact Me',
+                                title: 'Contact Me',
                                   git: Git,
                             linkedin : Linkd,
                                 pages: pages
@@ -63,12 +61,10 @@ router.get('/projects',
         );
     }
 );
-
 /* GET services page. */
 router.get('/services',
   function(req, res, next) {
-    res.render('services',
-                          {
+    res.render('services', {
                                 title: 'Services',
                                   git: Git,
                             linkedin : Linkd,
